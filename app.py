@@ -68,16 +68,16 @@ if submit_button:
 
     response = model.generate_content(prompt_parts)
 
-    img_response = client.images.generate(
-        model="dall-e-3",
-        prompt="a white siamese cat",
-        size="1024x1024",
-        quality="standard",
-        n=1,
-    )
+    #img_response = client.images.generate(
+    #    model="dall-e-3",
+    #    prompt="a white siamese cat",
+    #    size="1024x1024",
+    #    quality="standard",
+    #    n=1,
+    #)
 
-    image_url = img_response.data[0].url
+    #image_url = img_response.data[0].url
 
-    st.image(image_url, caption="Generated image")
+    #st.image(image_url, caption="Generated image")
     st.title("Your blog post:")
     st.write(response.text)
