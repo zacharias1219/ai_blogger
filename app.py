@@ -54,8 +54,6 @@ with st.sidebar:
 
     num_words = st.number_input("Number of words", min_value=200, max_value=1000, step=100)
 
-    num_images = st.number_input("Number of images", min_value=0, max_value=10, step=1)
-
     prompt_parts = [
         f"Craft an all-encompassing and captivating blog post tailored to the provided {blog_title} and {keywords}. The post should span approximately {num_words} words, catering to an online readership. Emphasize originality, provide valuable insights, and sustain a coherent tone across the piece. The blog post should be written in {language} and should be optimized for search engines.  The post should be written in a {text_style} style, and should be free from any grammatical errors or plagiarism."
     ]
